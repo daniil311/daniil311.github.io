@@ -11,6 +11,16 @@ div a * {background: red; text-align:center;}
 h4 * { color: red; }
 
 img { float: left;
-	width:300px; 
-	height: 400px; 
+	width: 30%; 
+	height: 30%; 
+}
+@media (max-width: 768px) {
+    img {
+        width: 50%
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
 }
