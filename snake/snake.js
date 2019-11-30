@@ -1,10 +1,3 @@
-/**
- * Created with JetBrains WebStorm.
- * User: boyarshinov
- * Date: 26.06.13
- * Time: 18:36
- * To change this template use File | Settings | File Templates.
- */
 var mesh; //array
 var meshSize=32; //32px
 var headings={up:{x:0,y:1},down:{x:0,y:-1},left:{x:-1,y:0},right:{x:1,y:0}};
@@ -104,7 +97,7 @@ function move()
     if (mesh[nextX][nextY] == fieldItems.food)
     {
         score++;
-        //food! grow!
+        //food grow
         snake[snake.length]={x:-1,y:-1};//new body segment
         //speed up!
         snake.speed*=snake.speedFactor;
@@ -116,7 +109,7 @@ function move()
 
     if (mesh[nextX][nextY] == fieldItems.body)
     {
-        //boo...
+        //boo
         alert("GAME OVER!");
         clearInterval(interval);
         return;
@@ -133,7 +126,7 @@ function move()
         snake[l].x = snake[l-1].x;
         snake[l].y = snake[l-1].y;
     }
-    //move body where head once was
+  
     mesh[snake[0].x][snake[0].y]=fieldItems.body;
 
     snake[0].x=nextX;
