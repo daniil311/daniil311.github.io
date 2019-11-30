@@ -36,11 +36,11 @@
 }
 @media (max-width: 320px) {
     .p_image {
-        width: 30%; 
-	height: 30%; 
+        width: auto; 
+		height: auto; 
     }
 @media (max-width: 768px) {
     .p_image {
-        width: 50%;
-        height: 50%;
+        width: auto;
+        height: auto;
     }
