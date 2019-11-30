@@ -34,3 +34,13 @@
 	font-size: 36px;
 	color: #fff;
 }
+@media (max-width: 320px) {
+    .p_image {
+        width: 30%; 
+		height: 30%; 
+    }
+@media (max-width: 768px) {
+    .p_image {
+        width: 50%
+        height: 50%;
+    }
