@@ -17,7 +17,7 @@ headRtImg.src="img/head_r.png";
 var bodyImg = new Image();
 bodyImg.src="img/body.png";
 var foodImg = new Image();
-foodImg.src="img/apple.png";
+foodImg.src="img/apple.PNG";
 
 function init()
 {
